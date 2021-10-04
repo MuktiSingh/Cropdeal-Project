@@ -2,6 +2,7 @@
 <html>
 <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="global.css">
     <link rel="icon" type="image/icon" href="../Home Page/images/logo.png">
@@ -10,7 +11,7 @@
 
 <body>
     <nav>
-    <div class="logo"><a href="#"><img src="../Home Page/images/logo.png"><i>Crop Deals</i></a>
+    <div class="logo"><a><img src="../Home Page/images/logo.png"><i>Crop Deals</i></a>
     </div>
     <div>
         <ul id="navbar" class="text-center hlist">
@@ -69,35 +70,37 @@
   <footer>
     <section class="text-center" id="forcontact">Contact
         <form id="contact-form" method="POST">
-        <table>
+        <table id="for-media">
           <tr>
             <td>
 					  	<label for="name">Name</label>
             </td>
             <td>
-              <input type="text">
+              <input type="text" name="name" placeholder="Type Name">
             </td>
           </tr>
           <tr>
             <td>
-						  <label for="name">Phone no.</label>
+						  <label for="PhoneNum">Phone no.</label>
             </td>
              <td>
-              <input type="text">
+              <input type="text" name="PhoneNum" placeholder="Type Phone no.">
             </td>
           </tr>
           <tr>
             <td>
-						  <label for="name">Email-ID</label>
+						  <label for="email">Email-ID</label>
             </td>
              <td>
-              <input type="text">
+              <input type="text" name="email" placeholder="Type Email-ID">
             </td>
           </tr>
           <tr>
-            <td>Message</td>
             <td>
-              <textarea rows="2" name="text-area"></textarea>
+						  <label for="message">Message</label>
+            </td>
+            <td>
+              <textarea rows="2" name="message" placeholder="Type Message"></textarea>
             </td>
           </tr>
           <tr>
